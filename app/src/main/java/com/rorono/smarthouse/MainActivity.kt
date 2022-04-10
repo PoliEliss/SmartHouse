@@ -7,6 +7,7 @@ import com.google.android.material.snackbar.Snackbar
 import com.rorono.smarthouse.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
+
     lateinit var binding: ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
