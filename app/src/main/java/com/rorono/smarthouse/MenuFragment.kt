@@ -26,17 +26,22 @@ class MenuFragment : Fragment() {
         binding = FragmentMenuBinding.inflate(layoutInflater)
         return binding.root
 
+
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-       binding.openAll.setOnClickListener {
-           dataViewModel.message2.value ="1"
-       }
+        binding.openAll.setOnClickListener {
+            dataViewModel.message2.value ="1"
+        }
     }
 
     companion object {
 
         @JvmStatic
         fun newInstance() = MenuFragment()
+    }
+
+    override fun onStart() {
+        super.onStart()
     }
 }

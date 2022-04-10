@@ -16,7 +16,10 @@ class Floor1 : Fragment() {
     lateinit var binding: FragmentFloor1Binding
 
 
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
 
+    }
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -41,12 +44,14 @@ class Floor1 : Fragment() {
 
        }
         dataViewModel.message2.observe(activity as LifecycleOwner,{
-           // binding.socket.text = it
+
             test = it
+            changeColorButton(test)
         })
 
 
-        changeColorButton(test)
+
+
 
     }
     companion object {
