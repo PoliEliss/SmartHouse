@@ -9,7 +9,7 @@ import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.LifecycleOwner
 import com.rorono.smarthouse.databinding.FragmentFloor1Binding
 
- var test:String = ""
+
 
 class Floor1 : Fragment() {
     private val dataViewModel:DataViewModel by activityViewModels()
@@ -45,7 +45,7 @@ class Floor1 : Fragment() {
        }
         dataViewModel.message2.observe(activity as LifecycleOwner,{
 
-            test = it
+          val test = it
             changeColorButton(test)
         })
 
