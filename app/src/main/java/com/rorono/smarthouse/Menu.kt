@@ -1,11 +1,8 @@
 package com.rorono.smarthouse
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Adapter
-import android.widget.Toast
 import androidx.activity.viewModels
-import com.google.android.material.tabs.TabLayout
+import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.tabs.TabLayoutMediator
 import com.rorono.smarthouse.databinding.ActivityMenuBinding
 
@@ -15,7 +12,7 @@ class Menu : AppCompatActivity() {
     private var fragList = listOf(
         MenuFragment.newInstance(),
         Floor1.newInstance(),
-        Floor2.newInstance(),
+        Floor2Fragmeny.newInstance(),
         Electro.newInstance()
     )
     private var fragListTitles = listOf(

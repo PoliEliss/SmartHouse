@@ -1,17 +1,15 @@
 package com.rorono.smarthouse
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.LifecycleOwner
-import androidx.viewpager2.widget.ViewPager2
-import com.google.android.material.tabs.TabLayout
 import com.rorono.smarthouse.databinding.FragmentFloor1Binding
 
-lateinit var test:String
+ var test:String = ""
 
 class Floor1 : Fragment() {
     private val dataViewModel:DataViewModel by activityViewModels()
@@ -43,7 +41,7 @@ class Floor1 : Fragment() {
 
        }
         dataViewModel.message2.observe(activity as LifecycleOwner,{
-            //binding.socket.text = it
+           // binding.socket.text = it
             test = it
         })
 

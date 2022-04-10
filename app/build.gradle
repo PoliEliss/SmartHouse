@@ -51,6 +51,7 @@ dependencies {
         def arch_version = "2.1.0"
 
         // ViewModel
-        implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
+      implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
 
+    implementation "androidx.lifecycle:lifecycle-viewmodel-compose:$lifecycle_version"
 }
