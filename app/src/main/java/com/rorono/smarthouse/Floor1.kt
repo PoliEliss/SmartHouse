@@ -32,7 +32,8 @@ class Floor1 : Fragment() {
     private fun changeColorButton(str: String) {
         if (str == "1") {
             binding.socket.setBackgroundColor(resources.getColor(R.color.green))
-
+            binding.socet2.setBackgroundColor(resources.getColor(R.color.green))
+            binding.socet3.setBackgroundColor(resources.getColor(R.color.green))
         }
     }
 
