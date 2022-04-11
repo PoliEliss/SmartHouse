@@ -11,4 +11,6 @@ open class DataViewModel : ViewModel() {
     val message2: MutableLiveData<String> by lazy {
         MutableLiveData<String>()
     }
+
+    var myLiveData = MyLiveData()
 }

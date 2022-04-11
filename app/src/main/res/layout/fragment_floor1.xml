@@ -16,11 +16,11 @@
         android:text="Первый этаж" />
 
     <Button
-        android:id="@+id/bSendToFloor2"
+        android:id="@+id/buttonTest"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="512dp"
-        android:text="Button"
+        android:text="Чайник"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
