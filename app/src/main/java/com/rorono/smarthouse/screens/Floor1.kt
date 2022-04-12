@@ -38,17 +38,10 @@ class Floor1 : Fragment() {
 
     }
 
-    private fun changeColorButton(str: String) {
-        if (str == "1") {
-            binding.socket.text = "tyjn"
-            binding.socet2.text = "jhhhh"
-
-        }
-    }
-
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         val appContext = context!!.applicationContext
+        binding.switch11.isChecked = false
         binding.buttonTest.setOnClickListener {
 
             dataViewModel.myLiveData.setValueLivedata("Кипит")
@@ -59,10 +52,8 @@ class Floor1 : Fragment() {
               binding.socet3.setBackgroundColor(ContextCompat.getColor(appContext,R.color.green))
               binding.socket.setBackgroundColor(ContextCompat.getColor(appContext,R.color.green))
               binding.socet2.setBackgroundColor(ContextCompat.getColor(appContext,R.color.green))
-
-            binding.socket.text = it
-            var test = it
-            changeColorButton(test)
+              binding.socket.text = it
+              binding.switch11.isChecked = true
 
         })
 

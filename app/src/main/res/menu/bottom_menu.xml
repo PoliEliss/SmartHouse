@@ -15,6 +15,7 @@
         app:showAsAction="withText"/>
     <item
         android:id="@+id/floor2Fragmeny"
+        android:icon="@drawable/ic_two"
         android:title="Второй этаж"
         app:showAsAction="always"/>
 

@@ -13,8 +13,22 @@
         android:layout_height="match_parent"
         android:gravity="center"
         android:text="Первый этаж"
-        tools:layout_editor_absoluteX="-88dp"
-        tools:layout_editor_absoluteY="162dp" />
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-38dp" />
+
+    <Switch
+        android:id="@+id/switch11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:layout_weight="1"
+        android:minHeight="48dp"
+        android:checked="false"
+        android:text="Розетка 11"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/buttonTest"
