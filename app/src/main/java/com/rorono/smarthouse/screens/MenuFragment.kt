@@ -32,7 +32,7 @@ class MenuFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         binding.openAll.setOnClickListener {
-            dataViewModel.message2.value = "1"
+            dataViewModel.message2.value = "2"
         }
 
     }
