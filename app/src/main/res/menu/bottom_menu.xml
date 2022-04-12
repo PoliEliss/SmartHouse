@@ -1,18 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
         android:id="@+id/menuFragment"
+        android:icon="@drawable/ic_home"
         android:title="Главное меню"
+        app:showAsAction="withText"
+
         />
     <item
         android:id="@+id/floor1"
-        android:title="Первый этаж" />
+        android:icon="@drawable/ic_one"
+        android:title="Первый этаж"
+        app:showAsAction="withText"/>
     <item
         android:id="@+id/floor2Fragmeny"
-        android:title="Второй этаж" />
+        android:title="Второй этаж"
+        app:showAsAction="always"/>
 
     <item
         android:id="@+id/electro"
+        android:icon="@drawable/ic_electro"
         android:title="Электроприборы"
-        android:visible="true"/>
+        android:visible="true"
+        app:showAsAction="always"/>
 </menu>

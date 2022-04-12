@@ -48,7 +48,9 @@ class Floor1 : Fragment() {
 
         }
         dataViewModel.message2.observe(activity as LifecycleOwner, {
-
+            binding.socket.setBackgroundColor(resources.getColor(R.color.green))
+            binding.socet2.setBackgroundColor(resources.getColor(R.color.green))
+            binding.socet3.setBackgroundColor(resources.getColor(R.color.green))
             binding.socket.text = it
 
 

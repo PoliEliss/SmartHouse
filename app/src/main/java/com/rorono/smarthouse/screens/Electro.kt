@@ -7,8 +7,11 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.Observer
+import androidx.navigation.Navigation
 import com.rorono.smarthouse.DataViewModel
+import com.rorono.smarthouse.R
 import com.rorono.smarthouse.databinding.FragmentElectroBinding
+import com.rorono.smarthouse.databinding.FragmentTestBinding
 
 
 class Electro : Fragment() {
@@ -21,8 +24,11 @@ class Electro : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         binding = FragmentElectroBinding.inflate(layoutInflater)
-        return binding.root
 
+
+
+        binding.floatButtonAddElectricalAppliance.setOnClickListener { Navigation.findNavController(view!!).navigate(R.id.action_electro_to_test) }
+        return binding.root
 
     }
 
