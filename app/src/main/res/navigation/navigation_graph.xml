@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/menuFragment">
+
+    <fragment
+        android:id="@+id/test"
+        android:name="com.rorono.smarthouse.screens.Test"
+        android:label="fragment_test"
+        tools:layout="@layout/fragment_test" >
+        <action
+            android:id="@+id/action_test_to_electro"
+            app:destination="@id/electro" />
+    </fragment>
+    <fragment
+        android:id="@+id/electro"
+        android:name="com.rorono.smarthouse.screens.Electro"
+        android:label="fragment_electro"
+        tools:layout="@layout/fragment_electro" >
+        <action
+            android:id="@+id/action_electro_to_test"
+            app:destination="@id/test" />
+        <action
+            android:id="@+id/action_electro_to_floor2Fragmeny"
+            app:destination="@id/floor2Fragmeny" />
+    </fragment>
+    <fragment
+        android:id="@+id/floor1"
+        android:name="com.rorono.smarthouse.screens.Floor1"
+        android:label="fragment_floor1"
+        tools:layout="@layout/fragment_floor1" >
+        <action
+            android:id="@+id/action_floor1_to_menuFragment"
+            app:destination="@id/menuFragment" />
+        <action
+            android:id="@+id/action_floor1_to_floor2Fragmeny"
+            app:destination="@id/floor2Fragmeny" />
+    </fragment>
+    <fragment
+        android:id="@+id/floor2Fragmeny"
+        android:name="com.rorono.smarthouse.screens.Floor2Fragmeny"
+        android:label="fragment_floor2"
+        tools:layout="@layout/fragment_floor2" >
+        <action
+            android:id="@+id/action_floor2Fragmeny_to_floor1"
+            app:destination="@id/floor1" />
+        <action
+            android:id="@+id/action_floor2Fragmeny_to_electro"
+            app:destination="@id/electro" />
+    </fragment>
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="com.rorono.smarthouse.screens.MenuFragment"
+        android:label="fragment_menu"
+        tools:layout="@layout/fragment_menu" >
+        <action
+            android:id="@+id/action_menuFragment_to_floor1"
+            app:destination="@id/floor1" />
+    </fragment>
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.rorono.smarthouse.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" />
+</navigation>

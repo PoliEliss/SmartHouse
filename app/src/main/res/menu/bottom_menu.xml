@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menuFragment"
+        android:title="Главное меню"
+        />
+    <item
+        android:id="@+id/floor1"
+        android:title="Первый этаж" />
+    <item
+        android:id="@+id/floor2Fragmeny"
+        android:title="Второй этаж" />
+
+    <item
+        android:id="@+id/electro"
+        android:title="Электроприборы"
+        android:visible="true"/>
+</menu>

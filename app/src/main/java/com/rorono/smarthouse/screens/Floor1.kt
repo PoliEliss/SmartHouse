@@ -49,12 +49,13 @@ class Floor1 : Fragment() {
         }
         dataViewModel.message2.observe(activity as LifecycleOwner, {
 
-            val test = it
-            changeColorButton(test)
+            binding.socket.text = it
+
+
         })
-
-
     }
+
+
 
     companion object {
         fun newInstance() = Floor1()

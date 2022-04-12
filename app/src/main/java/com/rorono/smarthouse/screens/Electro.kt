@@ -32,6 +32,8 @@ class Electro : Fragment() {
                 binding.socet2.text = it
 
         })
+
+
     }
     companion object {
 
