@@ -5,6 +5,10 @@ import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.tabs.TabLayoutMediator
 import com.rorono.smarthouse.databinding.ActivityMenuBinding
+import com.rorono.smarthouse.screens.Electro
+import com.rorono.smarthouse.screens.Floor1
+import com.rorono.smarthouse.screens.Floor2Fragmeny
+import com.rorono.smarthouse.screens.MenuFragment
 
 class Menu : AppCompatActivity() {
 

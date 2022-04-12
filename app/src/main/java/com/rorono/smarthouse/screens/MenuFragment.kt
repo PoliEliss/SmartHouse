@@ -1,4 +1,4 @@
-package com.rorono.smarthouse
+package com.rorono.smarthouse.screens
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -6,11 +6,12 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.activityViewModels
+import com.rorono.smarthouse.DataViewModel
 import com.rorono.smarthouse.databinding.FragmentMenuBinding
 
 
 class MenuFragment : Fragment() {
-    private val dataViewModel:DataViewModel by activityViewModels()
+    private val dataViewModel: DataViewModel by activityViewModels()
     lateinit var binding: FragmentMenuBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
