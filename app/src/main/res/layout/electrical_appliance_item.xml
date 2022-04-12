@@ -36,19 +36,7 @@
             app:layout_constraintTop_toBottomOf="@+id/tv_item_electrical_appliance"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
-        <TextView
-            android:id="@+id/tv_item_number_flor"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="16dp"
-            android:gravity="center"
-            android:lines="1"
-            android:text="Номер этажа"
-            android:textColor="@color/black"
-            android:textSize="18sp"
-            app:layout_constraintTop_toBottomOf="@+id/tv_item_number_socket"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

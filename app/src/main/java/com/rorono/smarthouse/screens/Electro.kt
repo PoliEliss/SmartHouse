@@ -8,16 +8,23 @@ import android.view.ViewGroup
 import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.Observer
 import androidx.navigation.Navigation
+import androidx.recyclerview.widget.GridLayoutManager
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.rorono.smarthouse.DataViewModel
+import com.rorono.smarthouse.ElectricalApplianceAdapter
 import com.rorono.smarthouse.R
 import com.rorono.smarthouse.databinding.FragmentElectroBinding
-
+import com.rorono.smarthouse.models.ElectricalAppliance
 
 
 class Electro : Fragment() {
 
+    var adapter = ElectricalApplianceAdapter()
+
     private val dataViewModel: DataViewModel by activityViewModels()
     lateinit var binding: FragmentElectroBinding
+
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -28,20 +35,27 @@ class Electro : Fragment() {
 
 
         binding.floatButtonAddElectricalAppliance.setOnClickListener {
-            Navigation.findNavController(view!!).navigate(R.id.action_electro_to_add) }
+            Navigation.findNavController(view!!).navigate(R.id.action_electro_to_add)
+        }
         return binding.root
 
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
 
+
         dataViewModel.myLiveData.observe(this, Observer {
-                binding.socet2.text = it
+            binding.socet2.text = it
 
         })
-
+        binding.apply {
+            recyclerView.layoutManager = LinearLayoutManager(view.context)
+            recyclerView.adapter = adapter
+        }
+        addElectro()
 
     }
+
     companion object {
 
 
@@ -49,4 +63,13 @@ class Electro : Fragment() {
         fun newInstance() = Electro()
 
     }
+
+    fun addElectro() {
+        val list: MutableList<ElectricalAppliance> = mutableListOf()
+        list.add(ElectricalAppliance("Чайник","2"))
+        list.add(ElectricalAppliance("Кондиционер","4"))
+        list.add(ElectricalAppliance("Робот-пылесос","1"))
+        adapter.addElectroAppliance(list)
+    }
+
 }
