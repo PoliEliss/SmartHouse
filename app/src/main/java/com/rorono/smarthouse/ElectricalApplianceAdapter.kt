@@ -45,6 +45,7 @@ class ElectricalApplianceAdapter :
         electricalApplianceList.apply {
             clear()
             addAll(item)
+
         }
         notifyDataSetChanged()
     }

@@ -54,7 +54,7 @@ class Add : Fragment() {
             }else{
 
                 mViewModel.insert(ElectricalAppliance(title = name, numberSocket = text)){
-                          //APP_MENU_ACTIVITY.navController.navigate(R.id.action_add_to_electro)
+
 
                     requireActivity().runOnUiThread {
                         Navigation.findNavController(view!!).navigate(R.id.action_add_to_electro)

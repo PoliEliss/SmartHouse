@@ -10,7 +10,9 @@ import com.rorono.smarthouse.utils.REPOSITORY
 import java.lang.StringBuilder
 
 class DataViewModel(application: Application) : AndroidViewModel(application) {
+
     private val mContext = application
+   // var allElectricalAppliance = REPOSITORY.allElectricalAppliance
     val message: MutableLiveData<String> by lazy {
         MutableLiveData<String>()
     }
