@@ -1,8 +1,6 @@
 plugins {
-    id 'com.android.library'
+    id 'com.android.application'
     id 'kotlin-android'
-    id 'kotlin-kapt'
-    id 'org.jetbrains.kotlin.android'
 }
 
 android {
@@ -60,12 +58,4 @@ dependencies {
     implementation "androidx.navigation:navigation-fragment-ktx:2.4.2"
     implementation "androidx.navigation:navigation-ui-ktx:2.4.2"
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.1"
-
-    //Room
-    def room_version = "2.4.2"
-    implementation "androidx.room:room-runtime:$room_version"
-    annotationProcessor "androidx.room:room-compiler:$room_version"
-    kapt "androidx.room:room-compiler:$room_version"
-    //coroutines
-    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.5.2'
 }
