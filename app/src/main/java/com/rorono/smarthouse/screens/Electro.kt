@@ -66,7 +66,7 @@ class Electro : Fragment() {
 
     fun addElectro() {
         val list: MutableList<ElectricalAppliance> = mutableListOf()
-        list.add(ElectricalAppliance("микроволновка","2"))
+        list.add(ElectricalAppliance("Чайник","2"))
         list.add(ElectricalAppliance("Кондиционер","4"))
         list.add(ElectricalAppliance("Робот-пылесос","1"))
         adapter.addElectroAppliance(list)
