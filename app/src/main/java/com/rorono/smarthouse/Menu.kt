@@ -15,6 +15,7 @@ import com.rorono.smarthouse.screens.Electro
 import com.rorono.smarthouse.screens.Floor1
 import com.rorono.smarthouse.screens.Floor2Fragmeny
 import com.rorono.smarthouse.screens.MenuFragment
+import com.rorono.smarthouse.utils.APP_MENU_ACTIVITY
 
 class Menu : AppCompatActivity() {
     lateinit var navController :NavController
@@ -35,7 +36,7 @@ class Menu : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMenuBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
+         APP_MENU_ACTIVITY = this
         //   val adapter = VpAdapter(this, fragList)
         //  binding.viewpager2.adapter = adapter
         //  TabLayoutMediator(binding.tabLayoutMenu, binding.viewpager2) { tab, pos ->

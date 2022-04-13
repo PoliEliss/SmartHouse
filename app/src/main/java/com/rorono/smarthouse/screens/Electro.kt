@@ -22,7 +22,7 @@ class Electro : Fragment() {
 
     var adapter = ElectricalApplianceAdapter()
 
-    private val dataViewModel: DataViewModel by activityViewModels()
+    val dataViewModel: DataViewModel by activityViewModels()
     lateinit var binding: FragmentElectroBinding
 
 
@@ -35,7 +35,7 @@ class Electro : Fragment() {
 
 
         binding.floatButtonAddElectricalAppliance.setOnClickListener {
-            dataViewModel.initDataBase("OK"){
+            dataViewModel.initDataBase("OK") {
                 Navigation.findNavController(view!!).navigate(R.id.action_electro_to_add)
             }
 
@@ -69,9 +69,9 @@ class Electro : Fragment() {
 
     fun addElectro() {
         val list: MutableList<ElectricalAppliance> = mutableListOf()
-        list.add(ElectricalAppliance(1,"Чайник","2"))
-        list.add(ElectricalAppliance(2,"Кондиционер","3"))
-        list.add(ElectricalAppliance(3,"Робот","1"))
+        list.add(ElectricalAppliance(1, "Чайник", "2"))
+        list.add(ElectricalAppliance(2, "Кондиционер", "3"))
+        list.add(ElectricalAppliance(3, "Робот", "1"))
         adapter.addElectroAppliance(list)
     }
 
