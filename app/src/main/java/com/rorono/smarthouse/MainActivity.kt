@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
 
         binding.btnStart.setOnClickListener {
             dataViewModel.initDataBase("OK"){
-                Toast.makeText(this,"jjjj",Toast.LENGTH_SHORT).show()
+               // Toast.makeText(this,"jjjj",Toast.LENGTH_SHORT).show()
             }
             if (binding.etInputName.text.toString().trim().isEmpty()) {
                 //Toast.makeText(this,"Please enter your name",Toast.LENGTH_LONG).show()
