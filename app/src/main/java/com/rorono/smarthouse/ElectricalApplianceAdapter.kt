@@ -18,7 +18,7 @@ class ElectricalApplianceAdapter :
         private val etName = binding.tvItemElectricalAppliance
         private val etNumberSockte = binding.tvItemNumberSocket
         fun bind(electricalAppliance: ElectricalAppliance) {
-            etName.text = electricalAppliance.name
+            etName.text = electricalAppliance.title
             etNumberSockte.text = electricalAppliance.numberSocket
 
         }

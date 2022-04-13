@@ -35,7 +35,10 @@ class Electro : Fragment() {
 
 
         binding.floatButtonAddElectricalAppliance.setOnClickListener {
-            Navigation.findNavController(view!!).navigate(R.id.action_electro_to_add)
+            dataViewModel.initDataBase("OK"){
+                Navigation.findNavController(view!!).navigate(R.id.action_electro_to_add)
+            }
+
         }
         return binding.root
 
@@ -66,9 +69,9 @@ class Electro : Fragment() {
 
     fun addElectro() {
         val list: MutableList<ElectricalAppliance> = mutableListOf()
-        list.add(ElectricalAppliance("Чайник","2"))
-        list.add(ElectricalAppliance("Кондиционер","4"))
-        list.add(ElectricalAppliance("Робот-пылесос","1"))
+        list.add(ElectricalAppliance(1,"Чайник","2"))
+        list.add(ElectricalAppliance(2,"Кондиционер","3"))
+        list.add(ElectricalAppliance(3,"Робот","1"))
         adapter.addElectroAppliance(list)
     }
 
