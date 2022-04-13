@@ -1,7 +1,7 @@
 package com.rorono.smarthouse.models
 
 data class ElectricalAppliance(
-    val name:String,
+    val title:String,
     val numberSocket:String
 )
 
