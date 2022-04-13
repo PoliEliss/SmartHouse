@@ -49,13 +49,14 @@ class Floor1 : Fragment() {
         }
         dataViewModel.message2.observe(activity as LifecycleOwner, {
 
-              binding.socet3.setBackgroundColor(ContextCompat.getColor(view.context,R.color.green))
-              binding.socket.setBackgroundColor(ContextCompat.getColor(view.context,R.color.green))
-              binding.socet2.setBackgroundColor(ContextCompat.getColor(view.context,R.color.green))
+              binding.socet3.setBackgroundColor(ContextCompat.getColor(appContext,R.color.green))
+              binding.socket.setBackgroundColor(ContextCompat.getColor(appContext,R.color.green))
+              binding.socet2.setBackgroundColor(ContextCompat.getColor(appContext,R.color.green))
               binding.socket.text = it
               binding.switch11.isChecked = true
 
         })
+
     }
 
     override fun onAttach(context: Context) {
@@ -67,7 +68,6 @@ class Floor1 : Fragment() {
         fun newInstance() = Floor1()
     }
 }
-
 
 
 
